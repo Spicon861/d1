@@ -1,0 +1,118 @@
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.container {
+    width: 80%;
+    border: 6px solid rgb(152, 7, 7);
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: red;
+    padding: 0;
+    margin: 0;
+}
+
+/* Franja roja superior con logo y slogan */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+}
+
+/* Logo: imagen + texto juntos */
+.logo-d1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Imagen del logo */
+.logo-circulo {
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+}
+
+/* Texto al lado del logo */
+.logo-texto {
+    color: white;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.logo-texto strong {
+    display: block;
+    font-size: 17px;
+}
+
+/* Slogan lado derecho */
+.slogan {
+    color: yellow;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* ===== MENÚ ===== */
+.menu {
+    background: black;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 16px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Enlace activo */
+.menu ul li a.activo {
+    color: yellow;
+    border-bottom: 3px solid yellow;
+}
+
+/* Hover del menú */
+.menu ul li a:hover {
+    background: rgb(40, 40, 40);
+    color: yellow;
+}
+
+/* ===== MAIN ===== */
+.container main img {
+    width: 100%;
+    display: block;
+}
+
+/* Contenido */
+.contenido {
+    padding: 20px;
+    text-align: justify;
+}
+
+.contenido h2 {
+    color: rgb(152, 7, 7);
+    margin-bottom: 12px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
