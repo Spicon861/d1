@@ -13,7 +13,6 @@ header {
     margin: 0;
 }
 
-/* Franja roja superior con logo y slogan */
 .header-top {
     display: flex;
     align-items: center;
@@ -21,21 +20,18 @@ header {
     padding: 12px 20px;
 }
 
-/* Logo: imagen + texto juntos */
 .logo-d1 {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-/* Imagen del logo */
 .logo-circulo {
     height: 60px;
     width: auto;
     border-radius: 50%;
 }
 
-/* Texto al lado del logo */
 .logo-texto {
     color: white;
     font-size: 13px;
@@ -47,7 +43,6 @@ header {
     font-size: 17px;
 }
 
-/* Slogan lado derecho */
 .slogan {
     color: yellow;
     font-style: italic;
@@ -59,16 +54,14 @@ header {
 .menu {
     background: rgb(255, 221, 2);
     width: 100%;
+    overflow: hidden;
 }
 
 .menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.menu ul li {
-    float: left;
+    display: flex;
 }
 
 .menu ul li a {
@@ -80,13 +73,11 @@ header {
     text-transform: uppercase;
 }
 
-/* Enlace activo */
 .menu ul li a.activo {
     color: red;
     border-bottom: 3px solid red;
 }
 
-/* Hover del menú */
 .menu ul li a:hover {
     background: rgb(40, 40, 40);
     color: rgb(255, 234, 0);
@@ -98,13 +89,11 @@ header {
     display: block;
 }
 
-/* Contenido */
 .contenido {
     padding: 20px;
     text-align: justify;
 }
 
-/* Caja roja */
 .caja-roja {
     background: red;
     border-radius: 10px;
@@ -122,13 +111,14 @@ header {
     color: white;
 }
 
-/* Línea amarilla debajo del h2 */
 .contenido h2 {
     color: rgb(152, 7, 7);
     margin-bottom: 12px;
     padding-bottom: 8px;
     border-bottom: 3px solid yellow;
     display: inline-block;
+    text-align: center;
+    width: 100%;
 }
 
 /* ===== TARJETAS DE PRODUCTOS ===== */
@@ -171,6 +161,86 @@ header {
     font-weight: bold;
     color: rgb(152, 7, 7);
     margin: 0;
+}
+
+/* ===== CONTACTO - TARJETAS ===== */
+.contacto-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 24px 0;
+}
+
+.contacto-card {
+    flex: 1;
+    min-width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 24px 16px;
+    text-align: center;
+    background: #fafafa;
+}
+
+.contacto-icono {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.contacto-card h3 {
+    color: rgb(152, 7, 7);
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.contacto-card p {
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===== CONTACTO - FORMULARIO ===== */
+.form-contacto {
+    max-width: 560px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-contacto h3 {
+    text-align: center;
+    color: rgb(152, 7, 7);
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: Arial, sans-serif;
+}
+
+.form-contacto textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-contacto button {
+    background: rgb(152, 7, 7);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
 }
 
 /* ===== FOOTER ===== */
